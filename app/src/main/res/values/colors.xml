@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_primary">#000000</color>
+    <color name="accent_primary">#9929EA</color>
+    <color name="accent_secondary">#CC66DA</color>
+    <color name="highlight">#FAEB92</color>
+    <color name="nav_item_color">#9929EA</color>
+    <color name="nav_ripple">#CC66DA</color>
+</resources>

@@ -1,0 +1,193 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/bg_primary"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="16dp">-->
+
+<!--    &lt;!&ndash; Search Bar &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/searchBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:background="@drawable/search_bar_bg"-->
+<!--        android:drawableStart="@android:drawable/ic_menu_search"-->
+<!--        android:drawablePadding="8dp"-->
+<!--        android:hint="Search Sensors"-->
+<!--        android:padding="12dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/accent_secondary"-->
+<!--        android:inputType="text"-->
+<!--        android:layout_marginBottom="16dp" />-->
+
+<!--    &lt;!&ndash; Grid of Sensor Cards &ndash;&gt;-->
+<!--    <GridLayout-->
+<!--        android:id="@+id/sensorGrid"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:columnCount="2"-->
+<!--        android:rowCount="2"-->
+<!--        android:alignmentMode="alignMargins"-->
+<!--        android:rowOrderPreserved="false"-->
+<!--        android:useDefaultMargins="true">-->
+
+<!--        &lt;!&ndash; BPM Card &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:background="@drawable/sensor_card_bg"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="BPM"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="@color/accent_primary"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvBPM"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="72"-->
+<!--                android:textSize="28sp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textStyle="bold" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash; O₂ Card &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:background="@drawable/sensor_card_bg"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="O₂"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="@color/accent_primary"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvOxygen"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="98%"-->
+<!--                android:textSize="28sp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textStyle="bold" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash; Steps Card &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:background="@drawable/sensor_card_bg"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Steps"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="@color/accent_primary"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvSteps"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="5,432"-->
+<!--                android:textSize="28sp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textStyle="bold" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash; Calories Card &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:background="@drawable/sensor_card_bg"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Calories"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="@color/accent_primary"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvCalories"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="250 kcal"-->
+<!--                android:textSize="28sp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textStyle="bold" />-->
+
+<!--        </LinearLayout>-->
+<!--    </GridLayout>-->
+
+<!--</LinearLayout>-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/sensorGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvBPM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="75 BPM"
+            android:textSize="24sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tvOxygen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="98 %"
+            android:textSize="24sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tvTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="36.7 °C"
+            android:textSize="24sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tvSteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,254 Steps"
+            android:textSize="24sp"
+            android:padding="8dp" />
+    </LinearLayout>
+</ScrollView>
